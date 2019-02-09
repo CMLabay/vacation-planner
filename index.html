@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Vacation Planner</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Find National Parks!</h1>
+        <form>
+            <fieldset>
+                <legend>Search parks by state</legend>
+                <label for="state">Enter state codes separated by space</label>
+                <input type="text" name="state" id="js-state" required>
+                <label for="max-results">Max results to return</label>
+                <input type="number" name="max-results" id="js-max-results" value="10">
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+        <section id="results" class="hidden">
+            <h3>Results</h3>
+            <p id="js-error" class="error"></p>
+            <ul id='results-list'></ul>
+        </section>
+    </body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="script.js"></script>
+</html>

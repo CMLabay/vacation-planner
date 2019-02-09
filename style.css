@@ -1,0 +1,12 @@
+fieldset{
+    border:none;
+}
+.hidden{
+    display:none;
+}
+li{
+    list-style: none;
+}
+body{
+    font-family:sans-serif;
+}
